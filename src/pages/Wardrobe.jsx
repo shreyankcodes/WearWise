@@ -3,8 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase/firebase";
 
-const API_URL = "http://localhost:5000/api/wardrobe";
-
+const API_URL = `${import.meta.env.VITE_API_URL}/api/wardrobe`;
 const CLOUDINARY_URL =
   "https://api.cloudinary.com/v1_1/sufrpmll/image/upload";
 

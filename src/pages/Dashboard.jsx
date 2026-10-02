@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../firebase/firebase";
 
-const API_URL = "http://localhost:5000/api/wardrobe";
-const OUTFIT_API_URL = "http://localhost:5000/api/outfits";
+const API_URL = `${import.meta.env.VITE_API_URL}`;
+const OUTFIT_API_URL = `${import.meta.env.VITE_API_URL}/api/outfits`;
 
 /* =====================================================
    ICONS
